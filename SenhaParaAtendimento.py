@@ -2,7 +2,8 @@ def menu():
     import random
     from time import sleep
     for x in range(1):
-        menu1 = int(input("Seja bem vindo ao Lion Consultoria.\nPara cadastrar seu nome e gerar senha de atendimento, pressione '1' e depois a tecla 'Enter': "))
+        menu1 = int(input("Seja bem vindo a Lion Consultoria.\nPara cadastrar seu nome e gerar senha de atendimento pressione '1' e depois a tecla 'Enter'\n"
+                          "Caso queira encerrar o atendimento pressione '2': "))
         if menu1 == 1:
             nome = input("Digite seu nome: ")
             num_aleatorio = random.randint(100, 110)
@@ -14,7 +15,11 @@ def menu():
             print(f"Senha: {num_aleatorio}\nSe apresente ao Guichê {guiche}!")
             print()
             menu()
+        elif menu1 == 2:
+            break
         else:
             print("Número digitado inválido!")
+            print()
             menu()
+
 menu()
