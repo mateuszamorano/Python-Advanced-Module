@@ -23,3 +23,5 @@ def menu():
             menu()
 
 menu()
+#função prioridade
+#registrar data de entrada e saida
